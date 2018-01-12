@@ -1,0 +1,13 @@
+.top-nav__item {
+  display: inline;
+
+  a {
+    color: $primary;
+  }
+
+  &:last-child() {
+    a {
+      color: $gray;
+    }
+  }
+}
