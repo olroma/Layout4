@@ -11,7 +11,7 @@ body {
 }
 
 /* #region Flex's Style */
-.promo__right, .register-info > .row div, .menu-primary, .bottom-nav .city {
+.promo__right, .register-info > .row div, .menu-primary, .bottom-nav .city, .new-books__slider .owl-nav {
   display: flex;
   align-items: center;
 }
@@ -179,13 +179,13 @@ body {
 }
 
 .top-nav {
-  width: 90%;
+  width: 97%;
   margin-top: 20px;
   margin-bottom: 15px;
 }
 
 .bottom-nav {
-  width: 90%;
+  width: 97%;
   height: 100%;
   background: white;
   box-shadow: -5px -4px 15px rgba(0, 0, 0, 0.08);
@@ -386,6 +386,10 @@ body {
   font-weight: bold;
 }
 
+.reviews {
+  margin-top: 115px;
+}
+
 .register-info {
   margin-top: 115px;
 }
@@ -448,7 +452,7 @@ body {
   background: #fdac7d;
 }
 
-.owl-next:after, .owl-prev:before {
+.news__slider .owl-next:after, .news__slider .owl-prev:before, .new-books__slider .owl-next:after {
   transition: all 0.15s ease-out;
   position: absolute;
   top: 50%;
@@ -461,7 +465,7 @@ body {
   color: #fdac7d;
 }
 
-.owl-nav {
+.news__slider .owl-nav {
   display: grid;
   grid-template-columns: 65px 65px;
   grid-template-rows: 65px 65px;
@@ -477,7 +481,7 @@ body {
   background: white;
 }
 
-.owl-next {
+.news__slider .owl-next {
   width: 65px;
   height: 65px;
   grid-column: 2;
@@ -485,11 +489,10 @@ body {
   position: relative;
   box-shadow: -5px -4px 15px rgba(0, 0, 0, 0.08);
 }
-.owl-next:after {
+.news__slider .owl-next:after {
   content: "\e250";
 }
-
-.owl-prev {
+.news__slider .owl-prev {
   width: 65px;
   height: 65px;
   grid-column: 1;
@@ -497,6 +500,31 @@ body {
   position: relative;
   box-shadow: -5px -4px 15px rgba(0, 0, 0, 0.08);
 }
-.owl-prev:before {
+.news__slider .owl-prev:before {
   content: "\e251";
+}
+
+.new-books__slider .owl-stage-outer {
+  margin-right: 190px;
+}
+.new-books__slider .owl-nav {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  justify-content: space-between;
+  z-index: -1;
+}
+.new-books__slider .owl-next {
+  width: 70px;
+  height: 425px;
+  box-shadow: -5px 0px 20px 0px rgba(0, 0, 0, 0.17);
+  position: relative;
+}
+.new-books__slider .owl-next:after {
+  content: "\e250";
+}
+.new-books__slider .owl-prev {
+  display: none;
 }

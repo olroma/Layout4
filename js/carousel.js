@@ -8,8 +8,9 @@ $(document).ready(function(){
   });
 
   $(".new-books__slider").owlCarousel({
-    items: 3,
+    items: 4,
     nav: true,
-    dots: false
+    dots: false,
+    autoWidth: true
   });
 });

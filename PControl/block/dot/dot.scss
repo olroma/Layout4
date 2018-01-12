@@ -11,7 +11,7 @@
   color: $secondary;
 }
 
-.owl-nav {
+%owl-nav-news {
   display: grid;
   grid-template-columns: 65px 65px;
   grid-template-rows: 65px 65px;
@@ -27,26 +27,62 @@
   background: white;
 }
 
-.owl-next {
-  @include square(65px);
-  @include setCell(1, 2);
-  position: relative;
-  box-shadow: -5px -4px 15px rgba(0, 0, 0, 0.08);
-
-  &:after {
-    @extend %icon;
-    content: "\e250";
+.news__slider {
+  .owl-nav {
+    @extend %owl-nav-news;
+  }
+  
+  .owl-next {
+    @include square(65px);
+    @include setCell(1, 2);
+    position: relative;
+    box-shadow: -5px -4px 15px rgba(0, 0, 0, 0.08);
+  
+    &:after {
+      @extend %icon;
+      content: "\e250";
+    }
+  }
+  
+  .owl-prev {
+    @include square(65px);
+    @include setCell(2, 1);
+    position: relative;
+    box-shadow: -5px -4px 15px rgba(0, 0, 0, 0.08);
+  
+    &:before {
+      @extend %icon;
+      content: "\e251";
+    }
   }
 }
 
-.owl-prev {
-  @include square(65px);
-  @include setCell(2, 1);
-  position: relative;
-  box-shadow: -5px -4px 15px rgba(0, 0, 0, 0.08);
+.new-books__slider {
+  .owl-stage-outer {
+    margin-right: 190px;
+  }
 
-  &:before {
-    @extend %icon;
-    content: "\e251";
+  .owl-nav {
+    @include square(100%);
+    @extend %centerVertically;
+    position: absolute;
+    top: 0;
+    left: 0;
+    justify-content: space-between;
+    z-index: -1;
+  }
+
+  .owl-next {
+    @include size(70px, 425px);
+    box-shadow: -5px 0px 20px 0px rgba(0, 0, 0, 0.17);
+    position: relative;
+    &:after {
+      @extend %icon;
+      content: "\e250";
+    }
+  }
+  
+  .owl-prev {
+    display: none;
   }
 }
