@@ -1,0 +1,52 @@
+%icon {
+  @include animation(.15s);
+  position: absolute;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  left: 50%;
+  font-family: "Icon";
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  color: $secondary;
+}
+
+.owl-nav {
+  display: grid;
+  grid-template-columns: 65px 65px;
+  grid-template-rows: 65px 65px;
+  height: 100%;
+  position: absolute;
+  align-content: center;
+  justify-content: center;
+  width: 315px;
+  top: 0;
+}
+
+.owl-theme .owl-nav [class*=owl-], .owl-theme .owl-nav [class*=owl-]:hover {
+  background: white;
+}
+
+.owl-next {
+  @include square(65px);
+  @include setCell(1, 2);
+  position: relative;
+  box-shadow: -5px -4px 15px rgba(0, 0, 0, 0.08);
+
+  &:after {
+    @extend %icon;
+    content: "\e250";
+  }
+}
+
+.owl-prev {
+  @include square(65px);
+  @include setCell(2, 1);
+  position: relative;
+  box-shadow: -5px -4px 15px rgba(0, 0, 0, 0.08);
+
+  &:before {
+    @extend %icon;
+    content: "\e251";
+  }
+}

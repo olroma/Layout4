@@ -3,6 +3,7 @@ $(document).ready(function(){
     items: 3,
     autoWidth: true,
     margin: 60,
-    dots: true
+    nav: true,
+    dots: false
   });
 });

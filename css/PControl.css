@@ -16,7 +16,7 @@ body {
   align-items: center;
 }
 
-.container-fluid.promo > .row:nth-child(1), .promo__right, .register-info > .row div {
+.container-fluid.promo > .row:nth-child(1), .promo__right, .register-info > .row div, .reviews__list {
   display: flex;
   justify-content: center;
 }
@@ -308,6 +308,10 @@ body {
   padding-top: 25px;
 }
 
+.news .owl-stage-outer {
+  margin-left: 315px;
+}
+
 .reviews__description {
   margin-top: 20px;
   padding-left: 45px;
@@ -334,7 +338,7 @@ body {
 }
 
 .reviews__list {
-  display: flex;
+  margin-top: 45px;
 }
 
 .reviews__name {
@@ -427,4 +431,59 @@ body {
 .button-secondary:hover {
   color: white;
   background: #fdac7d;
+}
+
+.owl-next:after, .owl-prev:before {
+  transition: all 0.15s ease-out;
+  position: absolute;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  left: 50%;
+  font-family: "Icon";
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  color: #fdac7d;
+}
+
+.owl-nav {
+  display: grid;
+  grid-template-columns: 65px 65px;
+  grid-template-rows: 65px 65px;
+  height: 100%;
+  position: absolute;
+  align-content: center;
+  justify-content: center;
+  width: 315px;
+  top: 0;
+}
+
+.owl-theme .owl-nav [class*=owl-], .owl-theme .owl-nav [class*=owl-]:hover {
+  background: white;
+}
+
+.owl-next {
+  width: 65px;
+  height: 65px;
+  grid-column: 2;
+  grid-row: 1;
+  position: relative;
+  box-shadow: -5px -4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.owl-next:after {
+  content: "\e250";
+}
+
+.owl-prev {
+  width: 65px;
+  height: 65px;
+  grid-column: 1;
+  grid-row: 2;
+  position: relative;
+  box-shadow: -5px -4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.owl-prev:before {
+  content: "\e251";
 }
