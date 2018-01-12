@@ -1,10 +1,22 @@
+.body {
+  background-color: #f8f8fa;
+}
+
+.container__title {
+  width: 100%;
+}
+
+.container-fluid__title {
+  width: 85%;
+}
+
 /* #region Flex's Style */
 .nav .dropdown {
   display: flex;
   align-items: center;
 }
 
-.nav .dropdown {
+.container-fluid > .row:nth-child(1), .nav .dropdown {
   display: flex;
   justify-content: center;
 }
@@ -12,6 +24,11 @@
 /* #endregion */
 /* #region Text Mixin */
 /* #endregion */
+.container__title, .container-fluid__title {
+  float: left;
+  color: black;
+}
+
 .nav_bordered__item {
   transition: all 0.35s ease-out;
   cursor: pointer;

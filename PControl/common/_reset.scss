@@ -1,0 +1,23 @@
+.body {
+  background-color: $background;
+}
+
+.container {
+  &__title {
+    @extend %title;
+    width: 100%;
+  }
+
+  &-fluid {
+    > .row {
+      &:nth-child(1) {
+        @extend %centerHorizontally;
+      }
+    }
+
+    &__title {
+      @extend %title;
+      width: 85%;
+    }
+  }
+}
