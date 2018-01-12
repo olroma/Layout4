@@ -4,6 +4,10 @@
   display: inline;
   margin-right: 25px;
 
+  &:last-child {
+    margin-right: 0;
+  }
+
   a {
     color: $primary;
   }

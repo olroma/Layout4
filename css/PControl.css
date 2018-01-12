@@ -15,12 +15,12 @@ body {
 }
 
 /* #region Flex's Style */
-.nav .dropdown, .promo__right, .register-info > .row div {
+.promo__right, .register-info > .row div, .menu-primary, .bottom-nav .city {
   display: flex;
   align-items: center;
 }
 
-.container-fluid > .row:nth-child(1), .nav .dropdown, .promo__right, .register-info > .row div {
+.container-fluid > .row:nth-child(1), .promo__right, .register-info > .row div {
   display: flex;
   justify-content: center;
 }
@@ -47,11 +47,9 @@ body {
 }
 
 .nav__item {
+  transition: all 0.35s ease-out;
   cursor: pointer;
-  transition: all .35s ease-out;
-  font-weight: bold;
-  font-size: 18px;
-  padding: 0 20px;
+  padding-right: 40px;
   margin-right: 5px;
   display: inline-flex !important;
 }
@@ -104,7 +102,6 @@ body {
   padding: 0 !important;
   text-decoration: none;
   font-size: 22px;
-  line-height: 60px;
   color: #939393;
   font-weight: bold;
 }
@@ -115,7 +112,7 @@ body {
 }
 
 .nav__link:hover, .nav__link:focus, .nav__link_last:hover, .nav__link_last:focus {
-  color: white;
+  color: #939393;
   transform: scale(1.1);
 }
 
@@ -148,51 +145,7 @@ body {
   height: 65px;
 }
 
-.nav .dropdown {
-  flex-direction: column;
-}
-
-.nav .dropdown .btn {
-  transition: all 0.15s ease-out;
-  width: 100%;
-  background: transparent !important;
-  color: white !important;
-  border: 0;
-  font-weight: bold;
-  line-height: 5px;
-  font-size: 14px;
-}
-
-.nav .dropdown .btn:hover {
-  transform: scale(1.1);
-  color: white;
-}
-
-.nav .dropdown-menu {
-  background: white;
-}
-
-.nav .dropdown-menu a {
-  color: white;
-  text-transform: none;
-  font-weight: bold;
-}
-
-.nav .dropdown-menu a:hover {
-  color: white;
-  background: white;
-}
-
 @media (max-width: 767px) {
-  .nav .dropdown-menu {
-    text-align: center;
-    width: 100% !important;
-    margin-right: 8px;
-  }
-  .nav .dropdown-menu a {
-    margin-top: 10px;
-    padding: 0 !important;
-  }
   .nav.row {
     min-width: 350px;
     position: absolute;
@@ -208,8 +161,10 @@ body {
   }
 }
 
-.top-nav-additional {
+.top-nav__additional {
   line-height: 47px;
+  text-align: right;
+  padding-right: 0;
 }
 
 .top-nav__item {
@@ -217,6 +172,10 @@ body {
   text-transform: uppercase;
   display: inline;
   margin-right: 25px;
+}
+
+.top-nav__item:last-child {
+  margin-right: 0;
 }
 
 .top-nav__item a {
@@ -232,12 +191,30 @@ body {
 }
 
 .top-nav {
+  width: 90%;
   margin-top: 20px;
   margin-bottom: 15px;
 }
 
 .bottom-nav {
-  height: 60px;
+  width: 90%;
+  height: 100%;
+  background: white;
+  box-shadow: -5px -4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.bottom-nav .city {
+  cursor: pointer;
+  justify-content: flex-end;
+  height: 65px;
+  padding-right: 20px;
+}
+
+.bottom-nav .city__name {
+  margin-left: 10px;
+  font-family: 'Roboto';
+  text-decoration: underline;
+  color: #64b4e2;
 }
 
 .promo__description {

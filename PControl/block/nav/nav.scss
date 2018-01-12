@@ -9,58 +9,14 @@
 .nav {
   background-color: white;
   height: 65px;
+}
 
-  .dropdown {
-    @extend %center;
-    flex-direction: column;
-    .btn {
-      @include animation(0.15s);
-      width: 100%;
-      background: transparent !important;
-      color: white !important;
-      border: 0;
-      font-weight: bold;
-      line-height: 5px;
-      font-size: 14px;
-
-      &:hover {
-        transform: scale(1.1);
-        color: white;
-      }
-    }
-
-    &-menu {
-      background: white;
-      
-      a {
-        color: white;
-        text-transform: none;
-        font-weight: bold;
-
-        &:hover {
-          color: white;
-          background: white;
-        }
-      }
-    }
-  }
+.menu-primary {
+  @extend %centerVertically;
 }
 
 @media (max-width: 767px) {
   .nav {
-    .dropdown {
-      &-menu {
-        text-align: center;
-        width: 100% !important;
-        margin-right: 8px;
-
-        a {
-          margin-top: 10px;
-          padding: 0 !important;
-        }
-      }
-    }
-
     &.row {
       min-width: 350px;
       position: absolute;
