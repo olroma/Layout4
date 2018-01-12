@@ -1,0 +1,22 @@
+.button {
+
+  &-primary {
+    color: white;
+    border: 1px solid $primary;
+    border-radius: 5px;
+  }
+
+  &-secondary {
+    @include animation(0.35s);
+    border: 0;
+    border-radius: 25px;
+    background: white;
+    color: $secondary;
+    box-shadow: 0 0 0 0 black;
+
+    &:hover {
+      color: white;
+      background: $secondary;
+    }
+  }
+}

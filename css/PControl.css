@@ -213,3 +213,23 @@
 .top-nav__item:last-child a {
   color: #939393;
 }
+
+.button-primary {
+  color: white;
+  border: 1px solid #64b4e2;
+  border-radius: 5px;
+}
+
+.button-secondary {
+  transition: all 0.35s ease-out;
+  border: 0;
+  border-radius: 25px;
+  background: white;
+  color: #fdac7d;
+  box-shadow: 0 0 0 0 black;
+}
+
+.button-secondary:hover {
+  color: white;
+  background: #fdac7d;
+}
