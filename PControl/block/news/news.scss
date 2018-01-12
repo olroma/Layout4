@@ -2,3 +2,11 @@
 @import 'block/news/__item/news__item.scss';
 @import 'block/news/__title/news__title.scss';
 @import 'block/news/__date/news__date.scss';
+
+.news {
+  margin-top: 50px;
+
+  .item {
+    padding-top: 25px;
+  }
+}

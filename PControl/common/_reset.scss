@@ -9,19 +9,14 @@ body {
 .container {
   &__title {
     @extend %title;
-    width: 100%;
+    margin-left: 80px;
   }
 
-  &-fluid {
+  &-fluid.promo {
     > .row {
       &:nth-child(1) {
         @extend %centerHorizontally;
       }
-    }
-
-    &__title {
-      @extend %title;
-      width: 85%;
     }
   }
 }

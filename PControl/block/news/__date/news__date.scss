@@ -1,0 +1,26 @@
+.news__date {
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  z-index: 1;
+  height: 85px;
+  width: 65px;
+  background-repeat: no-repeat;
+
+  span {
+    position: absolute;
+    font-weight: bold;
+
+    &:nth-child(2) {
+      font-size: 32px;
+      top: 0;
+      padding: 10px;
+    }
+
+    &:nth-child(3) {
+      font-size: 20px;
+      top: 35px;
+      padding: 10px;
+    }
+  }
+}

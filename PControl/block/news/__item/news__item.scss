@@ -1,4 +1,8 @@
 .news__item {
+  @include size(265px, 440px);
+  position: relative;
   border-radius: 5px;
-  box-shadow: 0 0 0 0 black;
+  box-shadow: -5px -4px 24px rgba(0, 0, 0, 0.17);
+  background: white;
+  z-index: 0;
 }

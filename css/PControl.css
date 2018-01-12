@@ -7,11 +7,7 @@ body {
 }
 
 .container__title {
-  width: 100%;
-}
-
-.container-fluid__title {
-  width: 85%;
+  margin-left: 80px;
 }
 
 /* #region Flex's Style */
@@ -20,7 +16,7 @@ body {
   align-items: center;
 }
 
-.container-fluid > .row:nth-child(1), .promo__right, .register-info > .row div {
+.container-fluid.promo > .row:nth-child(1), .promo__right, .register-info > .row div {
   display: flex;
   justify-content: center;
 }
@@ -28,8 +24,11 @@ body {
 /* #endregion */
 /* #region Text Mixin */
 /* #endregion */
-.container__title, .container-fluid__title {
+.container__title {
   float: left;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
   color: black;
 }
 
@@ -249,6 +248,64 @@ body {
   flex-direction: column;
   background-color: #aaaaaa;
   background-image: linear-gradient(-124deg, #c2e9fb 0%, #a1c4fd 100%);
+}
+
+.news__description {
+  padding: 20px;
+  font-family: 'Roboto';
+  font-size: 14px;
+}
+
+.news__item {
+  width: 265px;
+  height: 440px;
+  position: relative;
+  border-radius: 5px;
+  box-shadow: -5px -4px 24px rgba(0, 0, 0, 0.17);
+  background: white;
+  z-index: 0;
+}
+
+.news__title {
+  margin-top: 35px;
+  padding: 0 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.news__date {
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  z-index: 1;
+  height: 85px;
+  width: 65px;
+  background-repeat: no-repeat;
+}
+
+.news__date span {
+  position: absolute;
+  font-weight: bold;
+}
+
+.news__date span:nth-child(2) {
+  font-size: 32px;
+  top: 0;
+  padding: 10px;
+}
+
+.news__date span:nth-child(3) {
+  font-size: 20px;
+  top: 35px;
+  padding: 10px;
+}
+
+.news {
+  margin-top: 50px;
+}
+
+.news .item {
+  padding-top: 25px;
 }
 
 .reviews__description {
