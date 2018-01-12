@@ -1,7 +1,17 @@
 @import 'block/promo/__description/promo__description.scss';
 @import 'block/promo/__title/promo__title.scss';
 @import 'block/promo/__button/promo__button.scss';
+@import 'block/promo/__image/promo__image.scss';
 
 .promo {
+  &__left {
+    z-index: 1;
+  }
 
+  &__right {
+    @extend %center;
+    flex-direction: column;
+    background-color: #aaaaaa;
+    background-image: linear-gradient(-124deg, #c2e9fb 0%, #a1c4fd 100%);
+  }
 }

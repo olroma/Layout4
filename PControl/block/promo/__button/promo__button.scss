@@ -1,3 +1,4 @@
 .promo__button {
-  
+  @include size(280px, 65px);
+  margin-top: 45px;
 }
