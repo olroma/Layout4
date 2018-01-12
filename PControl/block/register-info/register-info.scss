@@ -1,0 +1,12 @@
+.register-info {
+  > .row {
+    div {
+      @extend %center;
+      flex-direction: column;
+    }
+  }
+
+  .button {
+    
+  }
+}

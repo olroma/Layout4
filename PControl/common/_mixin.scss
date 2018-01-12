@@ -8,8 +8,6 @@
   height: $height;
 }
 
-
-
 @mixin setCell($row, $column) {
   grid-column: $column;
   grid-row: $row;

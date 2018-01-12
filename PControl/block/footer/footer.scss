@@ -1,0 +1,12 @@
+.footer {
+  border-top: 1px solid #bdbdbdb4;
+  color: $gray;
+
+  &__left {
+    float: left;
+  }
+
+  &__copyright {
+    float: right;
+  }
+}
