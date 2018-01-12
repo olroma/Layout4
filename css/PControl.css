@@ -15,12 +15,12 @@ body {
 }
 
 /* #region Flex's Style */
-.nav .dropdown, .register-info > .row div {
+.nav .dropdown, .promo__right, .register-info > .row div {
   display: flex;
   align-items: center;
 }
 
-.container-fluid > .row:nth-child(1), .nav .dropdown, .register-info > .row div {
+.container-fluid > .row:nth-child(1), .nav .dropdown, .promo__right, .register-info > .row div {
   display: flex;
   justify-content: center;
 }
@@ -206,8 +206,15 @@ body {
   }
 }
 
+.top-nav-additional {
+  line-height: 47px;
+}
+
 .top-nav__item {
+  font-size: 16px;
+  text-transform: uppercase;
   display: inline;
+  margin-right: 25px;
 }
 
 .top-nav__item a {
@@ -216,6 +223,49 @@ body {
 
 .top-nav__item:last-child a {
   color: #939393;
+}
+
+.top-nav__link {
+  font-family: 'Roboto';
+}
+
+.top-nav {
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.promo__description {
+  font-weight: bold;
+  font-size: 22px;
+  color: black;
+  width: 360px;
+}
+
+.promo__title {
+  font-weight: bold;
+  font-size: 48px;
+  text-transform: uppercase;
+  color: black;
+}
+
+.promo__button {
+  width: 280px;
+  height: 65px;
+  margin-top: 45px;
+}
+
+.promo__image {
+  margin-left: 80px;
+}
+
+.promo__left {
+  z-index: 1;
+}
+
+.promo__right {
+  flex-direction: column;
+  background-color: #aaaaaa;
+  background-image: linear-gradient(-124deg, #c2e9fb 0%, #a1c4fd 100%);
 }
 
 .reviews__description {
@@ -328,10 +378,10 @@ body {
 .button-secondary {
   transition: all 0.35s ease-out;
   border: 0;
-  border-radius: 25px;
+  border-radius: 32px;
   background: white;
   color: #fdac7d;
-  box-shadow: 0 0 0 0 black;
+  box-shadow: -5px -4px 24px rgba(0, 0, 0, 0.17);
 }
 
 .button-secondary:hover {

@@ -14,10 +14,10 @@
   &-secondary {
     @include animation(0.35s);
     border: 0;
-    border-radius: 25px;
+    border-radius: 32px;
     background: white;
     color: $secondary;
-    box-shadow: 0 0 0 0 black;
+    box-shadow: $shadow;
 
     &:hover {
       color: white;
