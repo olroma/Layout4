@@ -1,8 +1,13 @@
 .button {
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
 
   &-primary {
     color: white;
     border: 1px solid $primary;
+    background-image: linear-gradient(to top, #a1c4fd 0%, #c2e9fb 100%);
     border-radius: 5px;
   }
 

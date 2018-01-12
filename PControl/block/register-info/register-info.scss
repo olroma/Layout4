@@ -1,4 +1,6 @@
 .register-info {
+  margin-top: 115px;
+
   > .row {
     div {
       @extend %center;
@@ -7,6 +9,11 @@
   }
 
   .button {
-    
+    @include size(420px, 75px);
+    margin-top: 30px;
+  }
+
+  h2 {
+    font-size: 34px;
   }
 }

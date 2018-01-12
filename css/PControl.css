@@ -280,8 +280,22 @@ body {
   font-weight: bold;
 }
 
+.register-info {
+  margin-top: 115px;
+}
+
 .register-info > .row div {
   flex-direction: column;
+}
+
+.register-info .button {
+  width: 420px;
+  height: 75px;
+  margin-top: 30px;
+}
+
+.register-info h2 {
+  font-size: 34px;
 }
 
 .footer {
@@ -297,9 +311,17 @@ body {
   float: right;
 }
 
+.button {
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
 .button-primary {
   color: white;
   border: 1px solid #64b4e2;
+  background-image: linear-gradient(to top, #a1c4fd 0%, #c2e9fb 100%);
   border-radius: 5px;
 }
 
