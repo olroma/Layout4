@@ -103,6 +103,8 @@ body {
 .nav__link, .nav__link_last {
   padding: 0 !important;
   text-decoration: none;
+  font-size: 22px;
+  line-height: 60px;
   color: #939393;
   font-weight: bold;
 }
@@ -232,6 +234,10 @@ body {
 .top-nav {
   margin-top: 20px;
   margin-bottom: 15px;
+}
+
+.bottom-nav {
+  height: 60px;
 }
 
 .promo__description {
