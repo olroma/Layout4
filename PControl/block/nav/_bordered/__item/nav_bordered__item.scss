@@ -1,0 +1,8 @@
+.nav_bordered__item {
+  @include animation(.35s);
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}

@@ -1,0 +1,74 @@
+@mixin square($width) {
+  width: $width;
+  height: $width;
+}
+
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin standart-list {
+  @extend centerHorizontally;
+  width: 100%;
+  -webkit-padding-start: 0px !important;
+
+  li {
+    list-style: none;
+  }
+}
+
+@mixin setCell($row, $column) {
+  grid-column: $column;
+  grid-row: $row;
+}
+
+@mixin animation($time) {
+  transition: all $time ease-out; 
+}
+
+/* #region Flex's Style */
+%centerVertically {
+  display: flex;
+  align-items: center;
+}
+
+%centerHorizontally {
+  display: flex;
+  justify-content: center;
+}
+
+%center {
+  @extend %centerVertically;
+  @extend %centerHorizontally;
+}
+/* #endregion */
+
+/* #region Text Mixin */
+%link {
+  text-decoration: underline;
+  color: $primary;
+  font-weight: bold;
+}
+/* #endregion */
+
+%absoluteReset {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+%disableOutline {
+  &:focus {
+    outline: 0;
+  }
+}
+
+%title {
+  width: 100%;
+  text-align: center;
+  margin-top: 35px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
