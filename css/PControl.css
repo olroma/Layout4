@@ -36,7 +36,6 @@ body {
   transition: all 0.35s ease-out;
   cursor: pointer;
 }
-
 .nav_bordered__item:hover {
   transform: scale(1.1);
 }
@@ -52,14 +51,12 @@ body {
   margin-right: 5px;
   display: inline-flex !important;
 }
-
 .nav__item i {
   font-size: 10px;
   margin-left: 8px;
   text-align: center;
   line-height: 18px;
 }
-
 .nav__item__last {
   padding: 0 20px;
 }
@@ -72,7 +69,6 @@ body {
     padding: 0;
   }
 }
-
 @media (max-width: 767px) {
   .nav__item, .nav__item_last {
     display: block !important;
@@ -85,18 +81,19 @@ body {
     right: 10px;
     top: 30%;
   }
+
   .nav__item {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
   .nav__item:nth-child(1) {
     padding-top: 10px;
   }
+
   .navbar-collapse {
     overflow: hidden !important;
     padding: 0;
   }
 }
-
 .nav__link, .nav__link_last {
   padding: 0 !important;
   text-decoration: none;
@@ -109,7 +106,6 @@ body {
   transition: all 0.15s ease-out;
   background-color: white !important;
 }
-
 .nav__link:hover, .nav__link:focus, .nav__link_last:hover, .nav__link_last:focus {
   color: #939393;
   transform: scale(1.1);
@@ -120,13 +116,11 @@ body {
     font-size: smaller !important;
   }
 }
-
 @media (max-width: 767px) {
   .nav__link, .nav__link_last, .dropdown-toggle {
     font-size: 14px !important;
   }
 }
-
 .nav_size_primary {
   font-size: 14px;
   line-height: 45px;
@@ -153,13 +147,11 @@ body {
     z-index: 2;
   }
 }
-
 @media (max-width: 450px) {
   .nav {
     display: block;
   }
 }
-
 .top-nav__additional {
   line-height: 47px;
   text-align: right;
@@ -172,15 +164,12 @@ body {
   display: inline;
   margin-right: 25px;
 }
-
 .top-nav__item:last-child {
   margin-right: 0;
 }
-
 .top-nav__item a {
   color: #64b4e2;
 }
-
 .top-nav__item:last-child a {
   color: #939393;
 }
@@ -201,14 +190,12 @@ body {
   background: white;
   box-shadow: -5px -4px 15px rgba(0, 0, 0, 0.08);
 }
-
 .bottom-nav .city {
   cursor: pointer;
   justify-content: flex-end;
   height: 65px;
   padding-right: 20px;
 }
-
 .bottom-nav .city__name {
   margin-left: 10px;
   font-family: 'Roboto';
@@ -243,7 +230,6 @@ body {
 .promo__left {
   z-index: 1;
 }
-
 .promo__right {
   flex-direction: column;
   background-color: #aaaaaa;
@@ -282,18 +268,15 @@ body {
   width: 65px;
   background-repeat: no-repeat;
 }
-
 .news__date span {
   position: absolute;
   font-weight: bold;
 }
-
 .news__date span:nth-child(2) {
   font-size: 32px;
   top: 0;
   padding: 10px;
 }
-
 .news__date span:nth-child(3) {
   font-size: 20px;
   top: 35px;
@@ -303,11 +286,9 @@ body {
 .news {
   margin-top: 50px;
 }
-
 .news .item {
   padding-top: 25px;
 }
-
 .news .owl-stage-outer {
   margin-left: 315px;
 }
@@ -315,7 +296,6 @@ body {
 .new-books {
   margin-top: 90px;
 }
-
 .new-books__slider .news__item {
   box-shadow: initial;
   background: transparent !important;
@@ -361,18 +341,15 @@ body {
   display: flex;
   padding: 15px;
 }
-
 .reviews__person img {
   width: 80px;
   height: 80px;
 }
-
 .reviews__person .person__info {
   display: inline;
   margin-top: 20px;
   margin-left: 25px;
 }
-
 .reviews__person .person__info * {
   display: block;
 }
@@ -386,17 +363,14 @@ body {
 .register-info {
   margin-top: 115px;
 }
-
 .register-info > .row div {
   flex-direction: column;
 }
-
 .register-info .button {
   width: 420px;
   height: 75px;
   margin-top: 30px;
 }
-
 .register-info h2 {
   font-size: 34px;
 }
@@ -407,39 +381,34 @@ body {
   border-top: 1px solid #bdbdbdb4;
   color: #939393;
 }
-
 .footer > .row {
   margin-top: 20px;
 }
-
 .footer span {
   font-family: 'Roboto';
 }
-
 .footer__left {
   margin-left: 80px;
   float: left;
 }
-
 .footer__copyright {
   margin-right: 80px;
   float: right;
 }
 
 .button {
+  outline: none !important;
   font-family: 'Roboto';
   font-size: 18px;
   font-weight: bold;
   text-transform: uppercase;
 }
-
 .button-primary {
   color: white;
   border: 1px solid #64b4e2;
   background-image: linear-gradient(to top, #a1c4fd 0%, #c2e9fb 100%);
   border-radius: 5px;
 }
-
 .button-secondary {
   transition: all 0.35s ease-out;
   border: 0;
@@ -448,7 +417,6 @@ body {
   color: #fdac7d;
   box-shadow: -5px -4px 24px rgba(0, 0, 0, 0.17);
 }
-
 .button-secondary:hover {
   color: white;
   background: #fdac7d;
@@ -491,7 +459,6 @@ body {
   position: relative;
   box-shadow: -5px -4px 15px rgba(0, 0, 0, 0.08);
 }
-
 .owl-next:after {
   content: "\e250";
 }
@@ -504,7 +471,6 @@ body {
   position: relative;
   box-shadow: -5px -4px 15px rgba(0, 0, 0, 0.08);
 }
-
 .owl-prev:before {
   content: "\e251";
 }
