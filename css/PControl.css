@@ -296,9 +296,35 @@ body {
 .new-books {
   margin-top: 90px;
 }
+.new-books__slider {
+  margin-top: 30px;
+}
+.new-books__slider .new-books__list {
+  margin-left: 25px;
+  list-style: none;
+}
+.new-books__slider .new-books__item:nth-child(2) {
+  margin-top: 65px;
+}
 .new-books__slider .news__item {
+  width: 220px;
+  height: 335px;
   box-shadow: initial;
   background: transparent !important;
+}
+.new-books__slider .news__image {
+  width: 161px;
+  box-shadow: 5px 5px 20px 0 #d4d4d4;
+}
+.new-books__slider .news__title {
+  padding: 0;
+  margin-top: 30px;
+  font-size: 18px;
+}
+.new-books__slider .news__description {
+  padding: 0;
+  margin-top: 15px;
+  font-size: 14px;
 }
 
 .reviews__description {

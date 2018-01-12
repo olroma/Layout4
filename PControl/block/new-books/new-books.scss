@@ -2,12 +2,44 @@
   margin-top: 90px;
 
   &__slider {
-    .news-book__list {
+    margin-top: 30px;
+
+    .new-books {
+      &__list {
+        margin-left: 25px;
+        list-style: none;
+      }
+
+      &__item {
+        &:nth-child(2) {
+          margin-top: 65px;
+        }
+      }
     }
 
-    .news__item {
-      box-shadow: initial;
-      background: transparent !important;
+    .news {
+      &__item {
+        @include size(220px, 335px);
+        box-shadow: initial;
+        background: transparent !important;
+      }
+
+      &__image {
+        width: 161px;
+        box-shadow: 5px 5px 20px 0 #d4d4d4;
+      }
+
+      &__title {
+        padding: 0;
+        margin-top: 30px;
+        font-size: 18px;
+      }
+
+      &__description {
+        padding: 0;
+        margin-top: 15px;
+        font-size: 14px;
+      }
     }
   }
 }

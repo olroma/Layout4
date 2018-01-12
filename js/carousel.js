@@ -7,4 +7,9 @@ $(document).ready(function(){
     dots: false
   });
 
+  $(".new-books__slider").owlCarousel({
+    items: 3,
+    nav: true,
+    dots: false
+  });
 });
