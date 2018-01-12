@@ -1,0 +1,13 @@
+.new-books {
+  margin-top: 90px;
+
+  &__slider {
+    .news-book__list {
+    }
+
+    .news__item {
+      box-shadow: initial;
+      background: transparent !important;
+    }
+  }
+}

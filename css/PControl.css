@@ -312,6 +312,15 @@ body {
   margin-left: 315px;
 }
 
+.new-books {
+  margin-top: 90px;
+}
+
+.new-books__slider .news__item {
+  box-shadow: initial;
+  background: transparent !important;
+}
+
 .reviews__description {
   margin-top: 20px;
   padding-left: 45px;
