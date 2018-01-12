@@ -393,15 +393,27 @@ body {
 }
 
 .footer {
+  height: 135px;
+  margin-top: 105px;
   border-top: 1px solid #bdbdbdb4;
   color: #939393;
 }
 
+.footer > .row {
+  margin-top: 20px;
+}
+
+.footer span {
+  font-family: 'Roboto';
+}
+
 .footer__left {
+  margin-left: 80px;
   float: left;
 }
 
 .footer__copyright {
+  margin-right: 80px;
   float: right;
 }
 

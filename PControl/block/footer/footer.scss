@@ -1,12 +1,24 @@
 .footer {
+  height: 135px;
+  margin-top: 105px;
   border-top: 1px solid #bdbdbdb4;
   color: $gray;
 
+  > .row {
+    margin-top: 20px;
+  }
+
+  span {
+    font-family: 'Roboto';
+  }
+
   &__left {
+    margin-left: 80px;
     float: left;
   }
 
   &__copyright {
+    margin-right: 80px;
     float: right;
   }
 }
