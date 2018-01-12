@@ -1,14 +1,14 @@
 %nav__link {
   padding: 0 !important;
   text-decoration: none;
-  color: white;
+  color: $gray;
   font-weight: bold;
 }
 
 .nav__link, .nav__link_last {
   @extend %nav__link;
   @include animation(.15s);
-  background-color: $primary !important;
+  background-color: white !important;
 
   &:hover, &:focus {
     color: white;

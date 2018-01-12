@@ -7,7 +7,7 @@
 @import "block/nav/_size/nav_size_secondary.scss";
 
 .nav {
-  background-color: $primary;
+  background-color: white;
   height: 65px;
 
   .dropdown {
@@ -30,7 +30,7 @@
     }
 
     &-menu {
-      background: $primary;
+      background: white;
       
       a {
         color: white;
@@ -39,7 +39,7 @@
 
         &:hover {
           color: white;
-          background: $primary;
+          background: white;
         }
       }
     }
