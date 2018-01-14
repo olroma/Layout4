@@ -19,7 +19,7 @@
   position: absolute;
   align-content: center;
   justify-content: center;
-  width: 315px;
+  width: 25%;
   top: 0;
 }
 
@@ -30,6 +30,7 @@
 .news__slider {
   .owl-nav {
     @extend %owl-nav-news;
+    left: 0;
   }
   
   .owl-next {

@@ -1,8 +1,13 @@
 .news__item {
   @include size(265px, 440px);
+  @include animation(0.15s);
   position: relative;
   border-radius: 5px;
   box-shadow: -5px -4px 24px rgba(0, 0, 0, 0.17);
   background: white;
   z-index: 0;
+
+  &:hover {
+    box-shadow: 4px -1px 20px rgba(0, 0, 0, 0.2);
+  }
 }
