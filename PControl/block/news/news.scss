@@ -2,15 +2,28 @@
 @import 'block/news/__item/news__item.scss';
 @import 'block/news/__title/news__title.scss';
 @import 'block/news/__date/news__date.scss';
+@import 'block/news/__background-text/news__background-text.scss';
 
 .news {
   margin-top: 50px;
+
+  > .row {
+    position: relative;
+    &:nth-child(2) {
+      position: relative;
+    }
+  }
+
+  &__slider {
+    position: initial;
+    padding: 0;
+  }
 
   .item {
     padding-top: 25px;
   }
 
   .owl-stage-outer {
-    margin-left: 315px;
+    position: initial;
   }
 }

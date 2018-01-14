@@ -25,11 +25,20 @@ body {
 /* #region Text Mixin */
 /* #endregion */
 .container__title {
+  cursor: pointer;
   float: left;
   font-size: 20px;
   font-weight: 600;
   text-transform: uppercase;
   color: black;
+}
+
+.news__background-text, .new__background-text, .reviews__background-text {
+  position: absolute;
+  font-size: 250px;
+  font-weight: 600;
+  color: #d9eafb;
+  z-index: -1;
 }
 
 .nav_bordered__item {
@@ -245,11 +254,15 @@ body {
 .news__item {
   width: 265px;
   height: 440px;
+  transition: all 0.15s ease-out;
   position: relative;
   border-radius: 5px;
   box-shadow: -5px -4px 24px rgba(0, 0, 0, 0.17);
   background: white;
   z-index: 0;
+}
+.news__item:hover {
+  box-shadow: 4px -1px 20px rgba(0, 0, 0, 0.2);
 }
 
 .news__title {
@@ -257,6 +270,7 @@ body {
   padding: 0 20px;
   font-size: 20px;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .news__date {
@@ -283,18 +297,41 @@ body {
   padding: 10px;
 }
 
+.news__background-text {
+  left: 0;
+  top: -25px;
+}
+
 .news {
   margin-top: 50px;
+}
+.news > .row {
+  position: relative;
+}
+.news > .row:nth-child(2) {
+  position: relative;
+}
+.news__slider {
+  position: initial;
+  padding: 0;
 }
 .news .item {
   padding-top: 25px;
 }
 .news .owl-stage-outer {
-  margin-left: 315px;
+  position: initial;
+}
+
+.new__background-text {
+  top: -120px;
+  right: 0;
 }
 
 .new-books {
   margin-top: 90px;
+}
+.new-books > .row:nth-child(1) {
+  position: relative;
 }
 .new-books__slider {
   margin-top: 30px;
@@ -386,8 +423,16 @@ body {
   font-weight: bold;
 }
 
+.reviews__background-text {
+  left: 0;
+  top: -120px;
+}
+
 .reviews {
   margin-top: 115px;
+}
+.reviews > .row:nth-child(1) {
+  position: relative;
 }
 
 .register-info {
@@ -473,7 +518,7 @@ body {
   position: absolute;
   align-content: center;
   justify-content: center;
-  width: 315px;
+  width: 25%;
   top: 0;
 }
 
@@ -481,6 +526,9 @@ body {
   background: white;
 }
 
+.news__slider .owl-nav {
+  left: 0;
+}
 .news__slider .owl-next {
   width: 65px;
   height: 65px;

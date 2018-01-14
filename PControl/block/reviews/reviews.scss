@@ -6,7 +6,14 @@
 @import 'block/reviews/__person/reviews__person.scss';
 @import 'block/reviews/__post/reviews__post.scss';
 @import 'block/reviews/__review/reviews__review.scss';
+@import 'block/reviews/__background-text/reviews__background-text.scss';
 
 .reviews {
   margin-top: 115px;
+
+  > .row {
+    &:nth-child(1) {
+      position: relative;
+    }
+  }
 }

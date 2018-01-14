@@ -53,11 +53,20 @@
 }
 
 %title {
+  cursor: pointer;
   float: left;
   font-size: 20px;
   font-weight: 600;
   text-transform: uppercase;
   color: black;
+}
+
+%title-background {
+  position: absolute;
+  font-size: 250px;
+  font-weight: 600;
+  color: #d9eafb;
+  z-index: -1;
 }
 
 %standart-list {
