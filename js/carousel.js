@@ -1,10 +1,25 @@
 $(document).ready(function(){
   $(".news__slider").owlCarousel({
     items: 3,
-    autoWidth: true,
+    autoWidth: false,
     margin: 60,
     nav: true,
-    dots: false
+    dots: false,
+    responsive : {
+      1700: {
+        items: 3,
+        autoWidth: true
+      },
+      1250: {
+        items: 3
+      },
+      800: {
+        items: 2
+      },
+      0: {
+        items: 1
+      }
+    }
   });
 
   $(".new-books__slider").owlCarousel({
