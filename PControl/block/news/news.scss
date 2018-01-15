@@ -27,3 +27,16 @@
     position: initial;
   }
 }
+
+@media (max-width: 859px) {
+  .news {
+    &__slider {
+      .owl-item {
+        &.active {
+          display: flex;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}

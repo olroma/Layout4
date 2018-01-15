@@ -394,6 +394,13 @@ body {
   position: initial;
 }
 
+@media (max-width: 859px) {
+  .news__slider .owl-item.active {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 .new__background-text {
   top: -120px;
   right: 0;
@@ -765,4 +772,13 @@ body {
 
 .new-books__slider .owl-prev {
   display: none;
+}
+
+@media (max-width: 767px) {
+  .news__slider .owl-nav {
+    width: initial;
+    display: flex;
+    position: initial;
+    height: initial;
+  }
 }
