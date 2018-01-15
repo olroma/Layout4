@@ -57,3 +57,23 @@ $promo-gradient: linear-gradient(-124deg, #c2e9fb 0%, #a1c4fd 100%);
     }
   }
 }
+
+@media (max-width: 500px) {
+  .promo {
+    > .row {
+      height: 550px;
+    }
+
+    &__overlay {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+
+    &__right {
+      padding-right: 0;
+    }
+  }
+}

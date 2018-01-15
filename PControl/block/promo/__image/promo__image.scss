@@ -19,3 +19,9 @@
     width: 350px;
   }
 }
+
+@media (max-width: 500px) {
+  .promo__image {
+    display: none;
+  }
+}

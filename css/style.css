@@ -25,5 +25,11 @@ html, body {
 		top: 50%;
 		transform: translateY(-50%);
 	}
+
+	.container__title {
+		text-align: center;
+		width: 100%;
+		margin-left: 0;
+	}
 }
 

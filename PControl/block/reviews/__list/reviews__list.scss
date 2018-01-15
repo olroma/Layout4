@@ -1,4 +1,5 @@
 .reviews__list {
+  @extend %standart-list;
   @extend %centerHorizontally;
   margin-top: 45px;
 }

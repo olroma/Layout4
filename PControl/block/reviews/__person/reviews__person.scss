@@ -34,6 +34,7 @@
 
 @media (max-width: 520px) {
   .reviews__person {
+    padding-left: 10px;
     img {
       @include square(50px);
     }

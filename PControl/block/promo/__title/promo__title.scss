@@ -4,3 +4,15 @@
   text-transform: uppercase;
   color: black;
 }
+
+@media (max-width: 470px) {
+  .promo__title {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 370px) {
+  .promo__title {
+    font-size: 36px;
+  }
+}

@@ -22,3 +22,9 @@
     float: right;
   }
 }
+
+@media (max-width: 440px) {
+  .footer {
+    margin-top: 48px;
+  }
+}

@@ -2,3 +2,10 @@
   @include size(280px, 65px);
   margin-top: 45px;
 }
+
+@media (max-width: 470px) {
+  .promo__button {
+    @include size(230px, 50px);
+    font-size: 14px;
+  }
+}
