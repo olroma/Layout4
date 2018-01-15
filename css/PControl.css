@@ -622,6 +622,18 @@ body {
   }
 }
 
+@media (max-width: 410px) {
+  .reviews__image {
+    width: 100%;
+    margin-top: 15px;
+    align-items: center;
+  }
+  .reviews__image img {
+    width: 125px;
+    height: 175px;
+  }
+}
+
 .reviews__item {
   width: 600px;
   height: 260px;
@@ -648,6 +660,14 @@ body {
   .reviews__item {
     margin-right: 0;
     width: 98%;
+  }
+}
+
+@media (max-width: 410px) {
+  .reviews__item {
+    display: flex;
+    flex-direction: column;
+    height: initial;
   }
 }
 

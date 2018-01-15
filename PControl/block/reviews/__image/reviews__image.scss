@@ -22,3 +22,15 @@
     padding: 20px 10px;
   }
 }
+
+@media (max-width: 410px) {
+  .reviews__image {
+    width: 100%;
+    margin-top: 15px;
+    align-items: center;
+
+    img {
+      @include size(125px, 175px);
+    }
+  }
+}

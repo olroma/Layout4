@@ -27,3 +27,11 @@
     width: 98%;
   }
 }
+
+@media (max-width: 410px) {
+  .reviews__item {
+    display: flex;
+    flex-direction: column;
+    height: initial;
+  }
+}
