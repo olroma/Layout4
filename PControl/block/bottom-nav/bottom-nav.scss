@@ -21,6 +21,9 @@
 
 @media (max-width: 767px) {
   .bottom-nav {
-    width: initial;
+    @include size(initial, 60px);
+    position: relative;
+    background: #fff;
+    height: 50px;
   }
 }
