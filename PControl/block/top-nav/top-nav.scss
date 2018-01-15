@@ -1,10 +1,25 @@
 @import 'block/top-nav/__additional/top-nav__additional.scss';
 @import 'block/top-nav/__item/top-nav__item.scss';
 @import 'block/top-nav/__link/top-nav__link.scss';
+@import 'block/top-nav/__list/top-nav__list.scss';
 @import 'block/top-nav/__logo/top-nav__logo.scss';
 
 .top-nav {
   width: 97%;
   margin-top: 20px;
   margin-bottom: 15px;
+}
+
+@media (max-width: 767px) {
+  .top-nav {
+    width: initial;
+  }
+}
+
+@media (max-width: 520px) {
+  .top-nav {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+  }
 }

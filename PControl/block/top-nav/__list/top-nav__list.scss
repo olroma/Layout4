@@ -1,4 +1,9 @@
 .top-nav__list {
   @extend %standart-list;
-  float: right;
+}
+
+@media (max-width: 520px) {
+  .top-nav__list {
+    margin-bottom: 0;
+  }
 }

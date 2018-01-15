@@ -9,3 +9,21 @@
 html, body {
   min-width: 320px;
 }
+
+.icon-bar {
+	background: #939393;
+}
+
+@media (max-width: 767px) {
+	.nav__link_last {
+		position: relative;
+	}
+
+	.nav__link_last img {
+		position: absolute;
+		left: -20px;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+}
+

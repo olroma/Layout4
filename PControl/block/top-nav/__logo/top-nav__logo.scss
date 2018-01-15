@@ -1,3 +1,10 @@
 .top-nav__logo {
   
 }
+
+@media (max-width: 520px) {
+  .top-nav__logo {
+    width: 100%;
+    text-align: center;
+  }
+}
