@@ -82,10 +82,6 @@
       content: "\e250";
     }
   }
-  
-  .owl-prev {
-    display: none;
-  }
 }
 
 @media (max-width: 767px) {
@@ -95,6 +91,37 @@
       display: flex;
       position: initial;
       height: initial;
+      margin-top: 20px;
+    }
+  }
+
+  .new-books__slider {
+    .owl-nav {
+      position: initial;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .owl-next, .owl-prev {
+      @include square(60px);
+    }
+
+    .owl-prev {
+      box-shadow: -5px 0px 20px 0px rgba(0, 0, 0, 0.17);
+      position: relative;
+      &:before {
+        @include animation(.15s);
+        position: absolute;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        left: 50%;
+        font-family: "Icon";
+        font-size: 20px;
+        text-align: center;
+        cursor: pointer;
+        color: $secondary;
+        content: "\e251";
+      }
     }
   }
 }

@@ -51,3 +51,24 @@
     }
   }
 }
+
+@media (max-width: 859px) {
+  .new-books {
+    .owl-item {
+      &.active {
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .new-books {
+    &__slider {
+      .owl-stage-outer {
+        margin-right: 0 !important;
+      }
+    }
+  }
+}

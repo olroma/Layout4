@@ -23,9 +23,27 @@ $(document).ready(function(){
   });
 
   $(".new-books__slider").owlCarousel({
-    items: 4,
+    items: 6,
     nav: true,
     dots: false,
-    autoWidth: true
+    autoWidth: false,
+    responsive : {
+      1920: {
+        items: 5,
+        autoWidth: true
+      },
+      1700: {
+        items: 4
+      },
+      1200: {
+        items: 3
+      },
+      860: {
+        items: 2
+      },
+      0: {
+        items: 1
+      }
+    }
   });
 });

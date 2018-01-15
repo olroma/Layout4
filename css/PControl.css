@@ -451,6 +451,19 @@ body {
   font-size: 14px;
 }
 
+@media (max-width: 859px) {
+  .new-books .owl-item.active {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .new-books__slider .owl-stage-outer {
+    margin-right: 0 !important;
+  }
+}
+
 .reviews__description {
   margin-top: 20px;
   padding-left: 45px;
@@ -770,15 +783,38 @@ body {
   content: "\e250";
 }
 
-.new-books__slider .owl-prev {
-  display: none;
-}
-
 @media (max-width: 767px) {
   .news__slider .owl-nav {
     width: initial;
     display: flex;
     position: initial;
     height: initial;
+    margin-top: 20px;
+  }
+  .new-books__slider .owl-nav {
+    position: initial;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .new-books__slider .owl-next, .new-books__slider .owl-prev {
+    width: 60px;
+    height: 60px;
+  }
+  .new-books__slider .owl-prev {
+    box-shadow: -5px 0px 20px 0px rgba(0, 0, 0, 0.17);
+    position: relative;
+  }
+  .new-books__slider .owl-prev:before {
+    transition: all 0.15s ease-out;
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    left: 50%;
+    font-family: "Icon";
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    color: #fdac7d;
+    content: "\e251";
   }
 }
