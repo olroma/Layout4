@@ -7,3 +7,18 @@
     
   }
 }
+
+@media (max-width: 1150px) {
+  .reviews__image {
+    padding: 40px 20px;
+  }
+}
+
+@media (max-width: 520px) {
+  .reviews__image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 10px;
+  }
+}

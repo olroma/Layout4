@@ -2,3 +2,10 @@
   @extend %centerHorizontally;
   margin-top: 45px;
 }
+
+@media (max-width: 991px) {
+  .reviews__list {
+    flex-direction: column;
+    align-items: center;
+  }
+}

@@ -16,3 +16,30 @@
     }
   }
 }
+
+@media (max-width: 1150px) {
+  .reviews__person {
+    padding-right: 5px;
+
+    img {
+      @include square(60px);
+    }
+  }
+
+  .person__info {
+    margin-top: 10px !important;
+    margin-left: 10px !important;
+  }
+}
+
+@media (max-width: 520px) {
+  .reviews__person {
+    img {
+      @include square(50px);
+    }
+
+    .person__info {
+      margin-top: 0 !important;
+    }
+  }
+}

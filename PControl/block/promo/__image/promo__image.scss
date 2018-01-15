@@ -13,3 +13,9 @@
     margin-left: 0px;
   }
 }
+
+@media (max-width: 850px) {
+  .promo__image {
+    width: 350px;
+  }
+}

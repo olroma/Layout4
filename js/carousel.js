@@ -13,7 +13,7 @@ $(document).ready(function(){
       1250: {
         items: 3
       },
-      800: {
+      860: {
         items: 2
       },
       0: {
