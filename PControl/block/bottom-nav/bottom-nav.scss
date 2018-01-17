@@ -1,5 +1,5 @@
 .bottom-nav {
-  @include size(97%, 100%);
+  height: 100%;
   background: white;
   box-shadow: -5px -4px 15px rgba(0, 0, 0, 0.08);
 
@@ -8,7 +8,7 @@
     @extend %centerVertically;
     justify-content: flex-end;
     height: 65px;
-    padding-right: 20px;
+    padding-right: 25px;
 
     &__name {
       margin-left: 10px;
@@ -21,7 +21,7 @@
 
 @media (max-width: 767px) {
   .bottom-nav {
-    @include size(initial, 60px);
+    height: 60px;
     position: relative;
     background: #fff;
     height: 50px;

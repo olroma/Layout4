@@ -1,5 +1,12 @@
 .top-nav__list {
   @extend %standart-list;
+  margin-right: 25px;
+}
+
+@media (max-width: 767px) {
+  .top-nav__list {
+    margin-right: 0;
+  }
 }
 
 @media (max-width: 520px) {
